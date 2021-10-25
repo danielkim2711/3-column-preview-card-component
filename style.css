@@ -61,6 +61,8 @@ body {
   border-radius: 0 0 10px 10px;
 }
 
+/* Button */
+
 .btn {
   background-color: var(--very-light-gray-background-headings-buttons);
   border-radius: 25px;
@@ -93,4 +95,60 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    height: 100vh;
+    justify-content: center;
+  }
+
+  /* Card */
+
+  .card {
+    display: flex;
+    height: 100%;
+    max-height: 500px;
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .card__container {
+    padding: 3rem;
+    width: 300px;
+  }
+
+  .card__sedan {
+    border-radius: 10px 0 0 10px;
+  }
+
+  .card__luxury {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .card__sedan p {
+    width: 22ch;
+  }
+
+  .card__suv p {
+    width: 23ch;
+  }
+
+  .card__luxury p {
+    height: 130px;
+    width: 23ch;
+  }
+
+  /* Button */
+
+  .btn {
+    margin-top: 4rem;
+  }
+
+  .btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--very-light-gray-background-headings-buttons);
+    color: var(--transparent-white-paragraphs);
+    cursor: pointer;
+  }
 }
