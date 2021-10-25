@@ -15,6 +15,7 @@
 }
 
 body {
+  background-color: var(--very-light-gray-background-headings-buttons);
   font-family: 'Lexend Deca', sans-serif;
   margin: 0;
   padding: 2rem 0;
